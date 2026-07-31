@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<h2>LoanAI</h2>
+
+</nav>
+
+
+
+<div class="container">
+
+
+<div class="card result">
+
+
+<h1>Prediction Result</h1>
+
+
+{% if "Approved" in prediction %}
+
+<h2 class="approved">
+{{prediction}}
+</h2>
+
+{% else %}
+
+<h2 class="rejected">
+{{prediction}}
+</h2>
+
+{% endif %}
+
+
+
+<h3>
+Approval Confidence
+</h3>
+
+
+<div class="progress">
+
+
+<div class="progress-bar"
+style="width:{{probability}}%">
+
+{{probability}}%
+
+</div>
+
+
+</div>
+
+
+
+<br>
+
+
+<a href="/">
+<button>
+Check Again
+</button>
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

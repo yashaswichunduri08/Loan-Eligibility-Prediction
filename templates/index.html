@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Loan Prediction System</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<h2>LoanAI</h2>
+
+<div>
+
+<a href="/">Home</a>
+<a href="/history">History</a>
+<a href="/about">About</a>
+
+</div>
+
+</nav>
+
+
+
+<div class="container">
+
+
+<div class="card">
+
+
+<h1>Loan Eligibility Prediction</h1>
+
+<p>
+AI powered loan approval prediction system
+</p>
+
+
+<form action="/predict" method="POST">
+
+
+<div class="form-grid">
+
+
+<select name="Gender">
+<option>Male</option>
+<option>Female</option>
+</select>
+
+
+<select name="Married">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+
+<select name="Dependents">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3+</option>
+</select>
+
+
+<select name="Education">
+
+<option>Graduate</option>
+<option>Not Graduate</option>
+
+</select>
+
+
+<select name="Self_Employed">
+
+<option>Yes</option>
+<option>No</option>
+
+</select>
+
+
+
+<input name="ApplicantIncome"
+placeholder="Applicant Income">
+
+
+<input name="CoapplicantIncome"
+placeholder="Coapplicant Income">
+
+
+<input name="LoanAmount"
+placeholder="Loan Amount">
+
+
+<input name="Loan_Amount_Term"
+placeholder="Loan Term">
+
+
+<input name="Credit_History"
+placeholder="Credit History (0/1)">
+
+
+
+<select name="Property_Area">
+
+<option>Urban</option>
+<option>Semiurban</option>
+<option>Rural</option>
+
+</select>
+
+
+</div>
+
+
+<button>
+Predict Loan
+</button>
+
+
+</form>
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
